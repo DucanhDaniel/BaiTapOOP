@@ -5,6 +5,7 @@ public class Main {
         for (int element : arr)
             result += element;
         return result;
+        //hihi
     }
     public static void main(String[] args) {
         String s1 = new String("test");
