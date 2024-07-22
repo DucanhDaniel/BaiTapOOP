@@ -5,12 +5,14 @@ public class NhanVien {
     private double luongCoBan;
     private double heSoLuong;
     public double LUONG_MAX;
+    public static int COUNT = 0;
     public NhanVien(){}
     public NhanVien(String tenNhanVien, double luongCoBan, double heSoLuong, double luongMax) {
         this.tenNhanVien = tenNhanVien;
         this.luongCoBan = luongCoBan;
         this.heSoLuong = heSoLuong;
         this.LUONG_MAX = luongMax;
+        COUNT++;
     }
     public void setTenNhanVien(String tenNhanVien) {
         this.tenNhanVien = tenNhanVien;
