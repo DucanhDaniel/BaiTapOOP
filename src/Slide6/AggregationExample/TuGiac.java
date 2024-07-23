@@ -1,7 +1,7 @@
 package Slide6.AggregationExample;
 
 public class TuGiac {
-    private Diem d1, d2, d3, d4;
+    protected Diem d1, d2, d3, d4;
     /*
     --------------            --------
     | Tu giac    | <>1------4-| Diem |
