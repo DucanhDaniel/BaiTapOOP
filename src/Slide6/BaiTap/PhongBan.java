@@ -35,11 +35,11 @@ public class PhongBan {
         }
         return res;
     }
-    public void inTTin(){
-        System.out.println("Ten phong: "+ tenPhongBan);
-        System.out.println("So NV: "+soNhanVien);
+    public void inTTin() {
+        System.out.println("Ten phong: " + tenPhongBan);
+        System.out.println("So NV: " + soNhanVien);
         System.out.println("Thong tin cac NV");
-        for (int i=0;i<soNhanVien;i++)
+        for (int i = 0; i < soNhanVien; i++)
             dsnv[i].inTTin();
     }
 }
