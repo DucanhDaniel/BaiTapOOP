@@ -1,9 +1,12 @@
-package Slide7.AbstractClassExample;
+package Slide7.InterfaceExample;
 
-abstract public class Shape{
+abstract class Shape {
     protected String name;
-    Shape(String name) {
+    protected int x, y;
+    Shape(String name, int x, int y) {
         this.name = name;
+        this.x = x;
+        this.y = y;
     }
     public String getName() {
         return name;
