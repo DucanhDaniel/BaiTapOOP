@@ -1,28 +1,30 @@
 package Slide7.InterfaceExample;
 
-class A {
+interface Interface3 {
+    default void doSomething() {
+        System.out.println("Execute in Interface3");
+    }
 
-    public int x = 10;
-    public void display1() {
-        System.out.println(this.x);
+    public static void test() {
+        System.out.println("test");
     }
 }
 
-class B extends A {
-
-    public int x = 1000;
-
-    public void display() {
-        System.out.println(this.x);
+abstract class Parent {
+    public void doSomething() {
+        System.out.println("Execute in Parent");
     }
-
 }
 
-public class Entry {
-
+public class Entry implements Interface3 {
     public static void main(String[] args) {
-        A b = new B();
-        b.display1();
+        Entry m = new Entry();
+        m.doSomething(); // Calls the overridden method in Entry
+        Interface3.test();
+    }
 
+    @Override
+    public void doSomething() {
+        System.out.println("Execute in Entry");
     }
 }
