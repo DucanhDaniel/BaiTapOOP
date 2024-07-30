@@ -1,4 +1,4 @@
-package Slide8.Ex4;
+package Slide8.Ex5;
 
 public class Dog extends Animal {
     public void greeting() {
